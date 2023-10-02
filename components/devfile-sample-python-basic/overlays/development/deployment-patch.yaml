@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/klakshma-tenant/devfile-sample-python-basic/devfile-sample-python-basic@sha256:580a60d8f3fe7d4214e0411fa74505be45f8444c41b29551463e2c091c9dae42
+        name: my-python
+        resources: {}
+status: {}
